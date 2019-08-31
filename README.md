@@ -1,7 +1,7 @@
 # NUnitProject
  
  
- The NUnit Test framework testing portfolio https://nunit.org/
+ The NUnit Test framework testing project demostrates the power of NUnit Framework https://nunit.org/
  
  This application provides 
  1. Basic assertions provided by NUnit.
