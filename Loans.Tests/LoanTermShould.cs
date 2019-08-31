@@ -5,7 +5,6 @@ using System.Collections.Generic;
 
 namespace Loans.Tests
 {
-    [TestFixture]
     public class LoanTermShould
     {
         [Test]
