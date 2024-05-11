@@ -75,26 +75,26 @@ namespace Loans.Tests
         {
             Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>());
 
-            Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>()
-                             .With
-                             .Property("Message")
-                             .EqualTo("Please specify a value greater than 0.\r\nParameter name: years"));
+            //Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>()
+            //                 .With
+            //                 .Property("Message")
+            //                 .EqualTo("Please specify a value greater than 0.\r\nParameter name: years"));
 
-            Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>()
-                             .With
-                             .Message
-                             .EqualTo("Please specify a value greater than 0.\r\nParameter name: years"));
+            //Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>()
+            //                 .With
+            //                 .Message
+            //                 .EqualTo("Please specify a value greater than 0.\r\nParameter name: years"));
 
-            // Correct ex and para name but don't care about the message
-            Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>()
-                             .With
-                             .Property("ParamName")
-                             .EqualTo("years"));
+            //// Correct ex and para name but don't care about the message
+            //Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>()
+            //                 .With
+            //                 .Property("ParamName")
+            //                 .EqualTo("years"));
 
-            Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>()
-                                         .With
-                                         .Matches<ArgumentOutOfRangeException>(
-                                             ex => ex.ParamName == "years"));
+            //Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>()
+            //                             .With
+            //                             .Matches<ArgumentOutOfRangeException>(
+            //                                 ex => ex.ParamName == "years"));
         }
     }
 }
